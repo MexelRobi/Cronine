@@ -2,7 +2,6 @@
 
 if [ ! -x /usr/local/bin/cronine ]; then
     echo "Error: /usr/local/bin/cronine does not exist or is not executable."
-    echo "Freezing script to preserve error state."
     while true; do sleep 3600; done
 fi
 
