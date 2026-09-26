@@ -1,0 +1,10 @@
+#!/bin/bash
+
+open /usr/local/bin/cronine
+
+if [ $? -ne 0 ]; then
+    echo "Execution failed. Freezing script to preserve error state."
+    while true; do
+        sleep 3600
+    done
+fi
